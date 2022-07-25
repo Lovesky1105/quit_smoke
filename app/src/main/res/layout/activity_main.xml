@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/et_guess"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_below="@id/img_card"
+        android:layout_centerHorizontal="true"
+        android:hint="Guess a number"
+        android:textAlignment="center"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:text="Submit"
+        android:onClick="btnSubmit_click"
+        app:backgroundTint="@null"
+        android:background="@drawable/rounded_btn"
+        />
+
+    <ImageView
+        android:id="@+id/img_card"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        app:srcCompat="@drawable/cover" />
+
+    <Button
+        android:id="@+id/btnPlayAgain"
+        android:layout_above="@+id/btnSubmit"
+        android:layout_marginBottom="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="btnPlayAgain_click"
+        android:text="Play Again"
+        android:background="@drawable/rounded_btn"
+        app:backgroundTint="@null" />
+
+
+</RelativeLayout>
